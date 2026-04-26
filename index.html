@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Informe web responsive del análisis de publicaciones LinkedIn sobre Interact2Hack 2026."
+    />
+    <title>Análisis LinkedIn — Interact2Hack 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a
+      href="#contenido"
+      class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[80] focus:rounded-full focus:bg-i2h-lime focus:px-4 focus:py-3 focus:font-bold focus:text-i2h-void"
+      >Saltar al contenido</a
+    >
+
+    <div class="site-bg min-h-screen overflow-hidden">
+      <div class="grid-overlay pointer-events-none fixed inset-0 z-0"></div>
+      <div class="scribble-overlay pointer-events-none fixed inset-0 z-0 opacity-80"></div>
+
+      <header class="sticky top-0 z-50 border-b border-white/10 bg-i2h-void/70 backdrop-blur-2xl">
+        <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
+          <a href="#inicio" class="flex min-h-11 items-center gap-3" aria-label="Ir al inicio del informe">
+            <img
+              class="header-brand h-10 w-auto sm:h-12"
+              src="./assets/header-logo.png"
+              width="296"
+              height="92"
+              alt="Interact2Hack"
+              decoding="async"
+            />
+          </a>
+
+          <nav class="hidden items-center gap-1 xl:flex" aria-label="Secciones principales">
+            <a class="nav-link" data-nav-link href="#temas">Temas</a>
+            <a class="nav-link" data-nav-link href="#sentimiento">Sentimiento</a>
+            <a class="nav-link" data-nav-link href="#emociones">Emociones</a>
+            <a class="nav-link" data-nav-link href="#narrativas">Narrativas</a>
+            <a class="nav-link" data-nav-link href="#keywords">Keywords</a>
+            <a class="nav-link" data-nav-link href="#perfiles">Perfiles</a>
+            <a class="nav-link" data-nav-link href="#hallazgos">Hallazgos</a>
+            <a class="nav-link" data-nav-link href="#conclusion">Conclusión</a>
+            <a class="nav-link" data-nav-link href="./posts.html">Publicaciones</a>
+          </nav>
+
+          <div class="flex items-center gap-2">
+            <button
+              class="chip min-w-11 justify-center"
+              type="button"
+              data-theme-toggle
+              aria-label="Cambiar tema"
+            ></button>
+            <button
+              class="chip min-w-11 justify-center xl:hidden"
+              type="button"
+              data-menu-toggle
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Abrir menú</span>
+              <span aria-hidden="true">☰</span>
+            </button>
+          </div>
+        </div>
+
+        <nav id="mobile-menu" data-mobile-menu class="hidden border-t border-white/10 px-4 py-3 xl:hidden" aria-label="Menú móvil">
+          <div class="mx-auto grid max-w-7xl grid-cols-2 gap-2 sm:grid-cols-4">
+            <a class="nav-link" data-nav-link href="#temas">Temas</a>
+            <a class="nav-link" data-nav-link href="#sentimiento">Sentimiento</a>
+            <a class="nav-link" data-nav-link href="#emociones">Emociones</a>
+            <a class="nav-link" data-nav-link href="#narrativas">Narrativas</a>
+            <a class="nav-link" data-nav-link href="#keywords">Keywords</a>
+            <a class="nav-link" data-nav-link href="#perfiles">Perfiles</a>
+            <a class="nav-link" data-nav-link href="#hallazgos">Hallazgos</a>
+            <a class="nav-link" data-nav-link href="#conclusion">Conclusión</a>
+            <a class="nav-link" data-nav-link href="./posts.html">Publicaciones</a>
+          </div>
+        </nav>
+      </header>
+
+      <main id="contenido" class="relative z-10">
+        <section id="inicio" class="mx-auto grid max-w-7xl gap-10 px-4 pb-16 pt-12 sm:px-6 lg:grid-cols-[1.04fr_.96fr] lg:px-8 lg:pb-24 lg:pt-20">
+          <div class="flex flex-col justify-center">
+            <div class="mb-6 flex flex-wrap gap-3">
+              <span class="chip">LinkedIn listening</span>
+              <span class="chip">Interact2Hack 2026</span>
+              <span class="chip">USFQ · 17-19 abril</span>
+            </div>
+            <h1 class="font-display text-[clamp(3rem,9vw,7.75rem)] font-bold uppercase tracking-[-.045em] text-white">
+              Señales de comunidad tech
+            </h1>
+            <p class="mt-6 max-w-2xl text-[var(--text-lg)] font-medium text-white/76">
+              Informe navegable sobre más de 40 publicaciones orgánicas alrededor del hackathon Interact2Hack 2026: temas, sentimiento, emociones, narrativas y oportunidades de comunicación.
+            </p>
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+              <a href="#hallazgos" class="inline-flex min-h-12 items-center justify-center rounded-full bg-i2h-lime px-6 font-extrabold text-i2h-void shadow-lime hover:-translate-y-0.5 hover:bg-white">
+                Ver hallazgos clave
+              </a>
+              <a href="#temas" class="inline-flex min-h-12 items-center justify-center rounded-full border border-white/14 bg-white/8 px-6 font-extrabold text-white hover:-translate-y-0.5 hover:bg-white/14">
+                Explorar secciones
+              </a>
+            </div>
+          </div>
+
+          <aside class="glass relative overflow-hidden rounded-[2rem] p-5 sm:p-7 lg:mt-10" aria-label="Resumen del corpus">
+            <div class="absolute -right-16 -top-16 h-44 w-44 rounded-full bg-i2h-violet/35 blur-3xl"></div>
+            <div class="absolute -bottom-16 -left-12 h-44 w-44 rounded-full bg-i2h-cyan/25 blur-3xl"></div>
+            <div class="relative">
+              <p class="font-display text-sm font-bold uppercase tracking-[.22em] text-i2h-lime">Resumen ejecutivo</p>
+              <div class="mt-6 grid gap-4 sm:grid-cols-2">
+                <article class="metric-card">
+                  <p class="relative font-display text-5xl font-bold text-white">40+</p>
+                  <p class="relative mt-2 text-sm font-semibold text-white/68">Publicaciones analizadas</p>
+                </article>
+                <article class="metric-card">
+                  <p class="relative font-display text-5xl font-bold text-i2h-lime">91%</p>
+                  <p class="relative mt-2 text-sm font-semibold text-white/68">Sentimiento positivo</p>
+                </article>
+                <article class="metric-card">
+                  <p class="relative font-display text-5xl font-bold text-white">70%</p>
+                  <p class="relative mt-2 text-sm font-semibold text-white/68">Publicaciones con narrativa de proceso</p>
+                </article>
+                <article class="metric-card">
+                  <p class="relative font-display text-5xl font-bold text-i2h-violet2">60%+</p>
+                  <p class="relative mt-2 text-sm font-semibold text-white/68">Menciones al reto DeUna</p>
+                </article>
+              </div>
+              <div class="mt-6 rounded-2xl border border-white/10 bg-black/20 p-5">
+                <p class="text-sm font-semibold uppercase tracking-[.18em] text-white/52">Lectura central</p>
+                <p class="mt-2 text-white/82">
+                  La conversación posterior al evento no se organiza alrededor de la competencia, sino de aprendizaje, colaboración, impacto local y conexión academia-industria.
+                </p>
+              </div>
+            </div>
+          </aside>
+        </section>
+
+        <section id="temas" class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+          <div class="section-card p-5 sm:p-8 lg:p-10">
+            <div class="mb-8 flex flex-col justify-between gap-5 lg:flex-row lg:items-end">
+              <div>
+                <span class="marker">01</span>
+                <h2 class="mt-5 font-display text-[var(--text-2xl)] font-bold uppercase tracking-[-.035em] text-white">Mapa de temas principales</h2>
+              </div>
+              <p class="max-w-xl text-white/68">
+                El discurso se concentra en experiencia intensa, trabajo colaborativo y soluciones fintech para micro-comerciantes ecuatorianos.
+              </p>
+            </div>
+
+            <div class="table-wrap">
+              <table class="report-table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Tema central</th>
+                    <th>Frecuencia</th>
+                    <th>Publicaciones representativas</th>
+                  </tr>
+                </thead>
+                <tbody class="text-white/78">
+                  <tr><td>1</td><td><strong>Experiencia del hackathon y aprendizaje bajo presión</strong></td><td>★★★★★ Muy alta · 35+</td><td>Marcelo C., Jorge Torres, Kevin Vargas, Juan Pachacama</td></tr>
+                  <tr><td>2</td><td><strong>Trabajo en equipo y colaboración interdisciplinaria</strong></td><td>★★★★★ Muy alta · 30+</td><td>Isabella Tulcán, Ahmed Puco, Atik Santellán, Alexis Guanoluisa</td></tr>
+                  <tr><td>3</td><td><strong>Soluciones para micro-comerciantes ecuatorianos</strong></td><td>★★★★☆ Alta · 20+</td><td>Josue Chiriboga, Jervin Intriago, Abel Ramos, Juan Diego Quimbiulco</td></tr>
+                  <tr><td>4</td><td><strong>IA y Machine Learning aplicados</strong></td><td>★★★★☆ Alta · 18+</td><td>Jefferson Vaca, Sebastian Gudiño, Jorge Revelo, Fernando Huilca</td></tr>
+                  <tr><td>5</td><td><strong>Mentoría y acompañamiento</strong></td><td>★★★☆☆ Media · 12+</td><td>Kevin Franco, Jimmy Guajan, Gabriela López, Marilyn Andino</td></tr>
+                  <tr><td>6</td><td><strong>Logros, resultados y finalistas</strong></td><td>★★★☆☆ Media · 15+</td><td>Isabella Tulcán, Atik Santellán, Ahmed Puco, Mateo Medranda</td></tr>
+                  <tr><td>7</td><td><strong>Conexión academia-industria</strong></td><td>★★★☆☆ Media · 10+</td><td>Netlife Ecuador, Marilyn Andino, Andrés Mosquera, Renato Rivera</td></tr>
+                  <tr><td>8</td><td><strong>Innovación fintech e impacto social</strong></td><td>★★★☆☆ Media · 10+</td><td>Luis Guerrero, Gregory Salazar, Ariel Pincay, Sebastian Gudiño</td></tr>
+                  <tr><td>9</td><td><strong>Data Science, scraping y herramientas técnicas</strong></td><td>★★☆☆☆ Media-baja · 8+</td><td>Jefferson Vaca, Sofía Acosta, Ariel Pincay, Mateo Yunga</td></tr>
+                  <tr><td>10</td><td><strong>Crecimiento profesional y primeras experiencias</strong></td><td>★★☆☆☆ Media-baja · 8+</td><td>Jorge Torres, Arianna Hidalgo, Renato Rivera</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <section id="sentimiento" class="mx-auto grid max-w-7xl gap-6 px-4 py-12 sm:px-6 lg:grid-cols-[.9fr_1.1fr] lg:px-8">
+          <article class="section-card p-5 sm:p-8">
+            <span class="marker">02</span>
+            <h2 class="mt-5 font-display text-[var(--text-2xl)] font-bold uppercase tracking-[-.035em] text-white">Análisis de sentimiento</h2>
+            <p class="mt-4 text-white/68">
+              El corpus muestra una positividad sobresaliente: incluso la fricción aparece reencuadrada como aprendizaje.
+            </p>
+            <div class="mt-8 space-y-6">
+              <div>
+                <div class="mb-2 flex justify-between gap-4 text-sm font-bold text-white"><span>Positivo</span><span>91% · 37 publicaciones</span></div>
+                <div class="progress-track"><div class="progress-fill" data-progress="91"></div></div>
+              </div>
+              <div>
+                <div class="mb-2 flex justify-between gap-4 text-sm font-bold text-white"><span>Neutro</span><span>6% · 2 publicaciones</span></div>
+                <div class="progress-track"><div class="progress-fill !bg-white/50 !shadow-none" data-progress="6"></div></div>
+              </div>
+              <div>
+                <div class="mb-2 flex justify-between gap-4 text-sm font-bold text-white"><span>Negativo</span><span>3% · 1 parcial</span></div>
+                <div class="progress-track"><div class="progress-fill !bg-i2h-violet2" data-progress="3"></div></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="section-card p-5 sm:p-8">
+            <h3 class="font-display text-[var(--text-xl)] font-bold uppercase text-white">Por tipo de autor</h3>
+            <div class="mt-6 grid gap-4">
+              <div class="metric-card"><p class="relative font-bold text-white">Participantes ganadores</p><p class="relative mt-1 text-sm text-white/66">Muy positivo, alta intensidad emocional: orgullo, emoción y gratitud intensa.</p></div>
+              <div class="metric-card"><p class="relative font-bold text-white">Participantes no ganadores</p><p class="relative mt-1 text-sm text-white/66">Positivo, media-alta: énfasis en aprendizaje, no en derrota.</p></div>
+              <div class="metric-card"><p class="relative font-bold text-white">Mentores y jurado</p><p class="relative mt-1 text-sm text-white/66">Muy positivo: admiración por el talento joven y la energía del reto.</p></div>
+              <div class="metric-card"><p class="relative font-bold text-white">Organizadores y empresas</p><p class="relative mt-1 text-sm text-white/66">Positivo institucional y corporativo: visión de talento, innovación e impacto.</p></div>
+            </div>
+          </article>
+        </section>
+
+        <section id="emociones" class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+          <div class="section-card p-5 sm:p-8 lg:p-10">
+            <div class="grid gap-8 lg:grid-cols-[.75fr_1.25fr]">
+              <div>
+                <span class="marker">03</span>
+                <h2 class="mt-5 font-display text-[var(--text-2xl)] font-bold uppercase tracking-[-.035em] text-white">Emociones predominantes</h2>
+                <p class="mt-4 text-white/68">
+                  La emoción funciona como prueba social: orgullo y gratitud sostienen la narrativa pública posterior al evento.
+                </p>
+              </div>
+              <div class="grid gap-4 sm:grid-cols-2">
+                <article class="quote-card"><h3 class="font-display text-2xl font-bold text-i2h-lime">Orgullo</h3><p class="mt-2 text-sm text-white/70">“me enorgullece”, “inmensamente orgulloso”, “qué gran experiencia”</p><p class="mt-4 font-display text-xl text-white">★★★★★</p></article>
+                <article class="quote-card"><h3 class="font-display text-2xl font-bold text-i2h-lime">Gratitud</h3><p class="mt-2 text-sm text-white/70">“agradezco”, “gracias a”, “especial agradecimiento”</p><p class="mt-4 font-display text-xl text-white">★★★★★</p></article>
+                <article class="quote-card"><h3 class="font-display text-2xl font-bold text-white">Entusiasmo</h3><p class="mt-2 text-sm text-white/70">“sin parar”, “magia pura”, “qué genial”</p><p class="mt-4 font-display text-xl text-white">★★★★☆</p></article>
+                <article class="quote-card"><h3 class="font-display text-2xl font-bold text-white">Superación</h3><p class="mt-2 text-sm text-white/70">“salir de la zona de confort”, “crecimiento”, “nos reta y enseña”</p><p class="mt-4 font-display text-xl text-white">★★★★☆</p></article>
+                <article class="quote-card"><h3 class="font-display text-2xl font-bold text-white">Reflexión</h3><p class="mt-2 text-sm text-white/70">“una semana después...”, “me llevo mucho”, “no lo olvidaré”</p><p class="mt-4 font-display text-xl text-white">★★★☆☆</p></article>
+                <article class="quote-card"><h3 class="font-display text-2xl font-bold text-white">Asombro</h3><p class="mt-2 text-sm text-white/70">“no termino de procesarlo”, “me dejó sin palabras”</p><p class="mt-4 font-display text-xl text-white">★★★☆☆</p></article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="narrativas" class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+          <div class="mb-8">
+            <span class="marker">04</span>
+            <h2 class="mt-5 font-display text-[var(--text-2xl)] font-bold uppercase tracking-[-.035em] text-white">Narrativas recurrentes</h2>
+          </div>
+          <div class="grid gap-5 lg:grid-cols-2">
+            <article class="section-card p-6 sm:p-8">
+              <p class="font-display text-sm font-bold uppercase tracking-[.2em] text-i2h-lime">Narrativa 1</p>
+              <h3 class="mt-3 font-display text-[var(--text-xl)] font-bold uppercase text-white">El proceso vale más que el resultado</h3>
+              <p class="mt-4 text-white/70">
+                Presente en cerca del 70% de publicaciones: participantes no ganadores destacan el aprendizaje como mayor premio, con frases sobre aprendizajes que no se consiguen en aula.
+              </p>
+              <a class="source-link mt-5 inline-flex" href="https://www.linkedin.com/posts/alejandro-obando-1b0ab226a_interact2hack-hackathon-desarrollodesoftware-ugcPost-7453070480997130240-tMJw/" target="_blank" rel="noreferrer">Publicación de referencia</a>
+            </article>
+            <article class="section-card p-6 sm:p-8">
+              <p class="font-display text-sm font-bold uppercase tracking-[.2em] text-i2h-lime">Narrativa 2</p>
+              <h3 class="mt-3 font-display text-[var(--text-xl)] font-bold uppercase text-white">Tecnología al servicio del impacto social</h3>
+              <p class="mt-4 text-white/70">
+                El micro-comerciante ecuatoriano emerge como usuario final: fidelización, empoderamiento y decisiones financieras accesibles dan peso social al reto.
+              </p>
+              <div class="mt-5 flex flex-wrap gap-3">
+                <a class="source-link" href="https://www.linkedin.com/posts/juan-pachacama-429a362b5_interact2hack-hackathon-interact2hack-ugcPost-7452014070402191360-MAcE/" target="_blank" rel="noreferrer">Referencia 1</a>
+                <a class="source-link" href="https://www.linkedin.com/posts/jefferson-vaca_ia-scraping-datascience-share-7452438003580559360-g-hA/" target="_blank" rel="noreferrer">Referencia 2</a>
+              </div>
+            </article>
+            <article class="section-card p-6 sm:p-8">
+              <p class="font-display text-sm font-bold uppercase tracking-[.2em] text-i2h-lime">Narrativa 3</p>
+              <h3 class="mt-3 font-display text-[var(--text-xl)] font-bold uppercase text-white">La presión cataliza talento</h3>
+              <p class="mt-4 text-white/70">
+                Las 32 horas son descritas como un entorno que activa capacidades, foco y resiliencia que la educación formal no siempre puede recrear.
+              </p>
+              <div class="mt-5 flex flex-wrap gap-3">
+                <a class="source-link" href="https://www.linkedin.com/posts/jorge-revelo_interact2hack-hackathon-tech-ugcPost-7453471014430236672-wXKT/" target="_blank" rel="noreferrer">Referencia 1</a>
+                <a class="source-link" href="https://www.linkedin.com/posts/kevinpaulfranco_i2h-hackathon-innovaciaejn-ugcPost-7451984857762697216-jh_E/" target="_blank" rel="noreferrer">Referencia 2</a>
+              </div>
+            </article>
+            <article class="section-card p-6 sm:p-8">
+              <p class="font-display text-sm font-bold uppercase tracking-[.2em] text-i2h-lime">Narrativa 4</p>
+              <h3 class="mt-3 font-display text-[var(--text-xl)] font-bold uppercase text-white">El equipo como protagonista</h3>
+              <p class="mt-4 text-white/70">
+                Casi ninguna publicación se centra en el logro individual: aparecen compañeros, roles complementarios y reconocimiento explícito del trabajo colaborativo.
+              </p>
+              <div class="mt-5 flex flex-wrap gap-3">
+                <a class="source-link" href="https://www.linkedin.com/posts/isabella-mía-tulcán-6b521b2a1_hackathon-innovaciaejn-tecnologaeda-ugcPost-7452189111756533760-Ge0d/" target="_blank" rel="noreferrer">Referencia 1</a>
+                <a class="source-link" href="https://www.linkedin.com/posts/atik-santellán-78a181317_una-semana-despu%C3%A9s-del-interact2hack-2026-ugcPost-7453972409960890368-0sgM/" target="_blank" rel="noreferrer">Referencia 2</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="keywords" class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+          <div class="section-card p-5 sm:p-8 lg:p-10">
+            <div class="mb-8 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
+              <div>
+                <span class="marker">05</span>
+                <h2 class="mt-5 font-display text-[var(--text-2xl)] font-bold uppercase tracking-[-.035em] text-white">Palabras clave más frecuentes</h2>
+              </div>
+              <p class="max-w-xl text-white/68">Los términos dominantes refuerzan tres vectores: evento, comunidad y tecnología aplicada.</p>
+            </div>
+            <div class="grid gap-4 lg:grid-cols-2">
+              <div class="metric-card"><div class="relative flex items-center justify-between gap-4"><strong>Hackathon</strong><span>40+</span></div><div class="relative mt-3 progress-track"><div class="progress-fill" data-progress="100"></div></div><p class="relative mt-2 text-sm text-white/60">Contexto central</p></div>
+              <div class="metric-card"><div class="relative flex items-center justify-between gap-4"><strong>Equipo / Team</strong><span>38+</span></div><div class="relative mt-3 progress-track"><div class="progress-fill" data-progress="95"></div></div><p class="relative mt-2 text-sm text-white/60">Eje de narrativa</p></div>
+              <div class="metric-card"><div class="relative flex items-center justify-between gap-4"><strong>USFQ</strong><span>35+</span></div><div class="relative mt-3 progress-track"><div class="progress-fill" data-progress="88"></div></div><p class="relative mt-2 text-sm text-white/60">Institución organizadora</p></div>
+              <div class="metric-card"><div class="relative flex items-center justify-between gap-4"><strong>Aprendizaje</strong><span>32+</span></div><div class="relative mt-3 progress-track"><div class="progress-fill" data-progress="80"></div></div><p class="relative mt-2 text-sm text-white/60">Valor principal comunicado</p></div>
+              <div class="metric-card"><div class="relative flex items-center justify-between gap-4"><strong>Innovación</strong><span>30+</span></div><div class="relative mt-3 progress-track"><div class="progress-fill" data-progress="75"></div></div><p class="relative mt-2 text-sm text-white/60">Aspiración colectiva</p></div>
+              <div class="metric-card"><div class="relative flex items-center justify-between gap-4"><strong>DeUna / Deuna App</strong><span>28+</span></div><div class="relative mt-3 progress-track"><div class="progress-fill" data-progress="70"></div></div><p class="relative mt-2 text-sm text-white/60">Patrocinador y reto principal</p></div>
+              <div class="metric-card"><div class="relative flex items-center justify-between gap-4"><strong>IA / Inteligencia Artificial</strong><span>25+</span></div><div class="relative mt-3 progress-track"><div class="progress-fill" data-progress="63"></div></div><p class="relative mt-2 text-sm text-white/60">Tecnología protagonista</p></div>
+              <div class="metric-card"><div class="relative flex items-center justify-between gap-4"><strong>Ecuador</strong><span>22+</span></div><div class="relative mt-3 progress-track"><div class="progress-fill" data-progress="55"></div></div><p class="relative mt-2 text-sm text-white/60">Anclaje geográfico e identidad</p></div>
+              <div class="metric-card"><div class="relative flex items-center justify-between gap-4"><strong>Mentores</strong><span>18+</span></div><div class="relative mt-3 progress-track"><div class="progress-fill" data-progress="45"></div></div><p class="relative mt-2 text-sm text-white/60">Figura de apoyo valorada</p></div>
+              <div class="metric-card"><div class="relative flex items-center justify-between gap-4"><strong>Micro-comerciantes</strong><span>15+</span></div><div class="relative mt-3 progress-track"><div class="progress-fill" data-progress="38"></div></div><p class="relative mt-2 text-sm text-white/60">Usuario objetivo del reto</p></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="perfiles" class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+          <div class="section-card p-5 sm:p-8 lg:p-10">
+            <span class="marker">06</span>
+            <h2 class="mt-5 font-display text-[var(--text-2xl)] font-bold uppercase tracking-[-.035em] text-white">Segmentación por perfil de autor</h2>
+            <div class="mt-8 table-wrap">
+              <table class="report-table">
+                <thead>
+                  <tr><th>Segmento</th><th>N° publicaciones</th><th>Enfoque principal</th><th>Tono</th></tr>
+                </thead>
+                <tbody class="text-white/78">
+                  <tr><td>Estudiantes participantes ganadores</td><td>~8</td><td>Resultado, equipo y propuesta técnica</td><td>Eufórico, emocional</td></tr>
+                  <tr><td>Estudiantes participantes finalistas</td><td>~15</td><td>Aprendizaje, proceso y crecimiento</td><td>Positivo, reflexivo</td></tr>
+                  <tr><td>Estudiantes sin clasificación final</td><td>~8</td><td>Experiencia vivida y networking</td><td>Agradecido, motivado</td></tr>
+                  <tr><td>Mentores / jurado</td><td>~5</td><td>Observación del talento y reflexión sobre IA</td><td>Inspirador, filosófico</td></tr>
+                  <tr><td>Organizadores / empresas</td><td>~4</td><td>Visión del evento e impacto colectivo</td><td>Institucional, celebratorio</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <section id="hallazgos" class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+          <div class="mb-8">
+            <span class="marker">07</span>
+            <h2 class="mt-5 font-display text-[var(--text-2xl)] font-bold uppercase tracking-[-.035em] text-white">Hallazgos destacados</h2>
+          </div>
+          <div class="grid gap-5 lg:grid-cols-5">
+            <article class="section-card p-6 lg:col-span-3">
+              <p class="font-display text-4xl font-bold text-i2h-lime">DeUna concentra el relato</p>
+              <p class="mt-4 text-white/72">
+                El reto de DeUna App, enfocado en un asistente financiero para micro-comerciantes, aparece en más del 60% de las publicaciones y domina la conversación de impacto.
+              </p>
+            </article>
+            <article class="section-card p-6 lg:col-span-2">
+              <p class="font-display text-4xl font-bold text-white">Positividad robusta</p>
+              <p class="mt-4 text-white/72">
+                El sentimiento positivo se mantiene incluso en equipos no ganadores, señal de valor percibido más allá de la competencia.
+              </p>
+            </article>
+            <article class="section-card p-6 lg:col-span-2">
+              <p class="font-display text-4xl font-bold text-white">Mentoría visible</p>
+              <p class="mt-4 text-white/72">
+                Felipe Duclos Letelier aparece en más de 15 publicaciones como referente de inspiración y mentoría directa.
+              </p>
+            </article>
+            <article class="section-card p-6 lg:col-span-3">
+              <p class="font-display text-4xl font-bold text-i2h-violet2">Fricción resignificada</p>
+              <p class="mt-4 text-white/72">
+                No hay sentimiento negativo genuino: noches sin dormir, bugs o bloqueos creativos son relatados como parte del proceso formativo.
+              </p>
+            </article>
+            <article class="section-card p-6 lg:col-span-5">
+              <p class="font-display text-4xl font-bold text-white">Alcance nacional</p>
+              <p class="mt-4 text-white/72">
+                La diversidad institucional, con menciones de USFQ, UDLA, EPN, UPEC y Yachay Tech, evidencia una conversación que rebasa una sola comunidad universitaria.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="conclusion" class="mx-auto max-w-7xl px-4 py-12 pb-20 sm:px-6 lg:px-8">
+          <div class="glass rounded-[2rem] p-6 sm:p-10 lg:p-14">
+            <span class="marker">08</span>
+            <h2 class="mt-6 max-w-5xl font-display text-[var(--text-3xl)] font-bold uppercase tracking-[-.045em] text-white">Conclusión general</h2>
+            <p class="mt-6 max-w-4xl text-[var(--text-lg)] font-medium text-white/78">
+              El corpus analizado representa una comunidad tech ecuatoriana altamente motivada, con discurso orientado al impacto social y al crecimiento personal. Interact2Hack 2026 generó una ola de contenido orgánico con sentimiento muy positivo, centrado en aprendizaje colectivo, impacto fintech para el mercado local y consolidación de redes profesionales entre academia e industria.
+            </p>
+            <p class="mt-5 max-w-4xl text-white/68">
+              La narrativa dominante no es competitiva sino colaborativa, lo que posiciona al evento como una experiencia formativa capaz de producir comunidad, prueba social y recordación de marca.
+            </p>
+
+            <div class="mt-10 border-t border-white/10 pt-8">
+              <h3 class="font-display text-2xl font-bold uppercase text-white">Fuentes enlazadas en el informe</h3>
+              <div class="mt-5 grid gap-3 text-sm sm:grid-cols-2">
+                <a class="source-link" href="https://www.linkedin.com/posts/alejandro-obando-1b0ab226a_interact2hack-hackathon-desarrollodesoftware-ugcPost-7453070480997130240-tMJw/" target="_blank" rel="noreferrer">LinkedIn · Alejandro Obando</a>
+                <a class="source-link" href="https://www.linkedin.com/posts/juan-pachacama-429a362b5_interact2hack-hackathon-interact2hack-ugcPost-7452014070402191360-MAcE/" target="_blank" rel="noreferrer">LinkedIn · Juan Pachacama</a>
+                <a class="source-link" href="https://www.linkedin.com/posts/jefferson-vaca_ia-scraping-datascience-share-7452438003580559360-g-hA/" target="_blank" rel="noreferrer">LinkedIn · Jefferson Vaca</a>
+                <a class="source-link" href="https://www.linkedin.com/posts/jorge-revelo_interact2hack-hackathon-tech-ugcPost-7453471014430236672-wXKT/" target="_blank" rel="noreferrer">LinkedIn · Jorge Revelo</a>
+                <a class="source-link" href="https://www.linkedin.com/posts/kevinpaulfranco_i2h-hackathon-innovaciaejn-ugcPost-7451984857762697216-jh_E/" target="_blank" rel="noreferrer">LinkedIn · Kevin Franco</a>
+                <a class="source-link" href="https://www.linkedin.com/posts/isabella-mía-tulcán-6b521b2a1_hackathon-innovaciaejn-tecnologaeda-ugcPost-7452189111756533760-Ge0d/" target="_blank" rel="noreferrer">LinkedIn · Isabella Tulcán</a>
+                <a class="source-link" href="https://www.linkedin.com/posts/atik-santellán-78a181317_una-semana-despu%C3%A9s-del-interact2hack-2026-ugcPost-7453972409960890368-0sgM/" target="_blank" rel="noreferrer">LinkedIn · Atik Santellán</a>
+                <a class="source-link" href="https://interact2hack.com/" target="_blank" rel="noreferrer">Referencia visual · Interact2Hack</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="relative z-10 border-t border-white/10 px-4 py-8 sm:px-6 lg:px-8">
+        <div class="mx-auto flex max-w-7xl flex-col justify-between gap-6 text-sm text-white/56 md:flex-row md:items-center">
+          <div class="flex flex-col gap-4">
+            <img
+              class="footer-brand h-10 w-fit max-w-[15rem] object-contain"
+              src="./assets/footer-logo.png"
+              width="416"
+              height="86"
+              alt="USFQ Medios Interactivos y SNeST Lab"
+              loading="lazy"
+              decoding="async"
+            />
+            <p>Informe web generado a partir del archivo “Análisis de Publicaciones LinkedIn — Interact2Hack 2026”.</p>
+          </div>
+          <p>© <span data-year></span> · Interact2Hack report experience</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./main.js" defer></script>
+  </body>
+</html>

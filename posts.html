@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Listado navegable de publicaciones de LinkedIn analizadas para el informe Interact2Hack 2026."
+    />
+    <title>Publicaciones analizadas — Interact2Hack 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="publicaciones">
+    <a
+      href="#contenido"
+      class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[80] focus:rounded-full focus:bg-i2h-lime focus:px-4 focus:py-3 focus:font-bold focus:text-i2h-void"
+      >Saltar al contenido</a
+    >
+
+    <div class="site-bg min-h-screen overflow-hidden">
+      <div class="grid-overlay pointer-events-none fixed inset-0 z-0"></div>
+      <div class="scribble-overlay pointer-events-none fixed inset-0 z-0 opacity-80"></div>
+
+      <header class="sticky top-0 z-50 border-b border-white/10 bg-i2h-void/70 backdrop-blur-2xl">
+        <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
+          <a href="./index.html#inicio" class="flex min-h-11 items-center gap-3" aria-label="Volver al informe">
+            <img
+              class="header-brand h-10 w-auto sm:h-12"
+              src="./assets/header-logo.png"
+              width="296"
+              height="92"
+              alt="Interact2Hack"
+              decoding="async"
+            />
+          </a>
+
+          <nav class="hidden items-center gap-1 xl:flex" aria-label="Secciones principales">
+            <a class="nav-link" data-nav-link href="./index.html#temas">Temas</a>
+            <a class="nav-link" data-nav-link href="./index.html#sentimiento">Sentimiento</a>
+            <a class="nav-link" data-nav-link href="./index.html#emociones">Emociones</a>
+            <a class="nav-link" data-nav-link href="./index.html#narrativas">Narrativas</a>
+            <a class="nav-link" data-nav-link href="./index.html#keywords">Keywords</a>
+            <a class="nav-link" data-nav-link href="./index.html#perfiles">Perfiles</a>
+            <a class="nav-link" data-nav-link href="./index.html#hallazgos">Hallazgos</a>
+            <a class="nav-link" data-nav-link href="./index.html#conclusion">Conclusión</a>
+            <a class="nav-link" data-nav-link href="./posts.html">Publicaciones</a>
+          </nav>
+
+          <div class="flex items-center gap-2">
+            <button
+              class="chip min-w-11 justify-center"
+              type="button"
+              data-theme-toggle
+              aria-label="Cambiar tema"
+            ></button>
+            <button
+              class="chip min-w-11 justify-center xl:hidden"
+              type="button"
+              data-menu-toggle
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Abrir menú</span>
+              <span aria-hidden="true">☰</span>
+            </button>
+          </div>
+        </div>
+
+        <nav id="mobile-menu" data-mobile-menu class="hidden border-t border-white/10 px-4 py-3 xl:hidden" aria-label="Menú móvil">
+          <div class="mx-auto grid max-w-7xl grid-cols-2 gap-2 sm:grid-cols-4">
+            <a class="nav-link" data-nav-link href="./index.html#temas">Temas</a>
+            <a class="nav-link" data-nav-link href="./index.html#sentimiento">Sentimiento</a>
+            <a class="nav-link" data-nav-link href="./index.html#emociones">Emociones</a>
+            <a class="nav-link" data-nav-link href="./index.html#narrativas">Narrativas</a>
+            <a class="nav-link" data-nav-link href="./index.html#keywords">Keywords</a>
+            <a class="nav-link" data-nav-link href="./index.html#perfiles">Perfiles</a>
+            <a class="nav-link" data-nav-link href="./index.html#hallazgos">Hallazgos</a>
+            <a class="nav-link" data-nav-link href="./index.html#conclusion">Conclusión</a>
+            <a class="nav-link" data-nav-link href="./posts.html">Publicaciones</a>
+          </div>
+        </nav>
+      </header>
+
+      <main id="contenido" class="relative z-10">
+        <section class="mx-auto max-w-7xl px-4 pb-10 pt-12 sm:px-6 lg:px-8 lg:pb-16 lg:pt-20">
+          <div class="max-w-5xl">
+            <div class="mb-6 flex flex-wrap gap-3">
+              <span class="chip">Archivo LinkedIn</span>
+              <span class="chip"><span data-post-count>45</span> publicaciones analizadas</span>
+              <span class="chip">Diseño editable</span>
+            </div>
+            <h1 class="font-display text-[clamp(3rem,8vw,7rem)] font-bold uppercase tracking-[-.045em] text-white">
+              Publicaciones analizadas
+            </h1>
+            <p class="mt-6 max-w-3xl text-[var(--text-lg)] font-medium text-white/76">
+              Página de archivo para consultar las publicaciones usadas en el análisis. Cada tarjeta resume autor, título, extracto breve y enlace directo al post original.
+            </p>
+          </div>
+        </section>
+
+        <section class="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
+          <div class="mb-6 flex flex-col justify-between gap-4 rounded-[1.5rem] border border-white/10 bg-black/20 p-5 sm:flex-row sm:items-center">
+            <div>
+              <p class="font-display text-sm font-bold uppercase tracking-[.2em] text-i2h-lime">Matriz de fuentes</p>
+              <p class="mt-1 text-white/68">LinkedIn no expone metadatos completos sin sesión; estos previews están organizados a partir de los autores y slugs de las URLs analizadas.</p>
+            </div>
+            <a href="./index.html#conclusion" class="inline-flex min-h-12 items-center justify-center rounded-full border border-white/14 bg-white/8 px-5 font-extrabold text-white hover:-translate-y-0.5 hover:bg-white/14">
+              Volver al informe
+            </a>
+          </div>
+
+          <div class="posts-grid" data-posts-grid></div>
+        </section>
+      </main>
+
+      <footer class="relative z-10 border-t border-white/10 px-4 py-8 sm:px-6 lg:px-8">
+        <div class="mx-auto flex max-w-7xl flex-col justify-between gap-6 text-sm text-white/56 md:flex-row md:items-center">
+          <div class="flex flex-col gap-4">
+            <img
+              class="footer-brand h-10 w-fit max-w-[15rem] object-contain"
+              src="./assets/footer-logo.png"
+              width="416"
+              height="86"
+              alt="USFQ Medios Interactivos y SNeST Lab"
+              loading="lazy"
+              decoding="async"
+            />
+            <p>Archivo de publicaciones enlazadas al informe “Análisis de Publicaciones LinkedIn — Interact2Hack 2026”.</p>
+          </div>
+          <p>© <span data-year></span> · Interact2Hack report experience</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./posts-data.js" defer></script>
+    <script src="./posts-render.js" defer></script>
+    <script src="./main.js" defer></script>
+  </body>
+</html>
